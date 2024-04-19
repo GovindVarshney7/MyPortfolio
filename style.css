@@ -1,0 +1,1061 @@
+@font-face {
+    font-family: Moranga;
+    src: url(./Fonts/moranga.ttf);
+}
+
+@font-face {
+    font-family: Gilroy;
+    src: url(./Fonts/Gilroy-Bold.otf);
+}
+
+@font-face {
+    font-family: Gilroy;
+    src: url(./Fonts/Gilroy-Semibold.otf);
+}
+
+@font-face {
+    font-family: Gilroy;
+    src: url(./Fonts/Gilroy-Medium.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* color: #fff; */
+    font-family: "Moranga";
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    
+    background-color: #111;
+}
+
+a {
+    text-decoration: none;
+}
+
+#main {
+    border-top: 2px solid black;
+    background-color: #111;
+    position: relative;
+}
+
+
+/* Navbar code */
+
+
+#nav {
+    border-top: 1px solid rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px 22px;
+    /* height: 120px; */
+    width: 100%;
+    position: fixed;
+    top: 2vh;
+    overflow: hidden;
+    z-index: 99;
+    
+    color: #fff;
+}
+
+#nav>a {
+    font-size: 2.5vw;
+    line-height: 2.4vw;
+    text-decoration: none;
+    width: 10vw;
+}
+
+.resume-btn {
+    right: 2vmax;
+    top: 1vmax;
+    z-index: 1111;
+    padding: .9vmax 1.5vmax;
+    border-radius: 5vmax;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 1vmax #FC626A;
+    background: linear-gradient(to right, #FE7D84, #FC626A);
+    box-shadow: 0 0 0.8vmax #49bff6;
+    background: linear-gradient(to right, #45d6e7, #38cdfa);
+    transition: 0.5s all;
+    cursor: pointer;
+}
+
+.resume-btn a {
+    font-size: 1.1vmax;
+    /* background-color: red; */
+    font-family: gilroy;
+    font-weight: 600;
+}
+
+
+#nav h5 {
+    font-size: 1.3vw;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-right: 1vw;
+    letter-spacing: 1px;
+    font-family: gilroy;
+}
+
+
+/* Navbar responsive  */
+
+@media (max-width:600px) {
+
+    #nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 4px 19px;
+        /* height: 120px; */
+        width: 100%;
+        position: fixed;
+        top: 2vh;
+        overflow: hidden;
+        z-index: 99;
+    }
+    #nav>a {
+        font-size: 7vw;
+        color: #fff;
+        line-height: 7vw;
+        text-decoration: none;
+        width: 10vw;
+    }
+    #nav h5 {
+        font-size: 1.3vw;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 300;
+        margin-right: 1vw;
+        letter-spacing: 1px;
+        font-family: gilroy;
+    }
+    .resume-btn {
+        padding: .9vmax 1.6vmax;
+        margin-left: -11vw;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .resume-btn a {
+        font-size: 3vmax;
+        /* background-color: red; */
+        font-family: gilroy;
+        font-weight: 600;
+    }
+}
+
+@font-face {
+    font-family: font2Bold;
+    src: url("fonts/proximanova-bold-webfont.woff");
+}
+
+@font-face {
+    font-family: font2Light;
+    src: url(fonts/proximanova-light-webfont.woff);
+}
+
+
+
+/* ------Page 1 code----- */
+
+
+
+
+
+#page1 {
+    border-top: 1px solid black;
+    height: 105vh;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    /* color: whitesmoke; */
+    /* background-color: #222; */
+}
+
+.p1Div {
+    height: 100vh;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.p1Inner {
+    cursor: pointer;
+}
+
+.p1Div h1 {
+    font-size: 6vw;
+    /* letter-spacing: -4px; */
+    letter-spacing: -0.06em;
+    font-family: font2Bold;
+}
+
+.p1Div p {
+    /* color: whitesmoke; */
+    font-size: 1.4vw;
+    width: 24vw;
+    font-family: font2Light;
+    margin-top: 0.5em;
+}
+
+.p1Image {
+    /* width: 32.5%; */
+    height: 44vw;
+    position: absolute;
+    transform: translate(-50%, 0);
+    bottom: 0;
+    left: 50%;
+}
+
+.p1Images img {
+    height: 100%;
+}
+
+.p1Images {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#p1Image1 {
+    width: 100%;
+    height: 100%;
+}
+
+#p1Image2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* left: 0; */
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+
+
+
+/* ----Page1 responsive---- */
+
+
+
+
+@media only screen and (max-width: 700px) {
+    #page1 {
+        border-top: 1px solid transparent;
+        margin:  45vw 0;
+        height: 50vw;
+        overflow: hidden;
+        /* background-color: red; */
+    }
+
+    .p1Div h1 {
+        font-size: 8vw;
+    }
+
+    .p1Div p {
+        display: none;
+    }
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+
+    #page1 {
+        height: 50vw;
+        overflow: hidden;
+    }
+
+    .p1Div {
+        height: 50vw;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+/* ------Page2 code------ */
+
+
+
+@keyframes namemoving {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-100% - 2vw - 4px));
+    }
+}
+#page2{
+    color: white;
+    width: 100%;
+}
+
+#page2 h1{
+    text-align: center;
+    word-spacing: 0.2vw;
+    letter-spacing: 0.01vw;
+    font-size: 4.4vw;
+    line-height: 6.3vw;
+    margin-top: 5rem;
+    margin-bottom: 8vh;
+}
+
+#page2 h2{
+    font-size: 2.2vmax;
+    font-family: gilroy;
+    margin-bottom: 1.4vmax;
+}
+.s3P {
+    font-size: 2vmax;
+    padding: 0 15vw;
+    font-family: gilroy;
+    text-align: center;
+    color: whitesmoke;
+    line-height: 2rem;
+}
+
+.s3Down {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5rem;
+}
+
+.s3DLeft,
+.s3DRight {
+    width: 40%;
+    /* background-color: blue; */
+}
+
+.s3DLeft p {
+    font-size: 1.80vmax;
+    font-weight: 500;
+    margin-bottom: 2vmax;
+    font-family: gilroy;
+    color: whitesmoke;
+}
+
+
+
+.s3DRight h1 {
+    font-weight: 700;
+    font-size: 1.7rem;
+    margin-bottom: 2.5rem;
+}
+
+.s3RightInner {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.s3Skills {
+    padding: 0.6rem 1.6rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    background: rgba(153, 153, 153, .2);
+    border-radius: 5px;
+    color: white;
+    font-size: 2vmax;
+    font-family: gilroy;
+}
+
+
+#page2 a img {
+    height: 6.8vmax;
+}
+#prof {
+    height: 80px;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2vmax;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+
+
+
+
+
+
+/* ----Page2 responsive----- */
+
+
+
+
+@media (max-width:700px) {
+    #page2{
+       padding:0 5vw; 
+       margin-top: 0;
+    }
+    #page2 h1{
+        margin-top: 0;
+        word-spacing: 0.2vw;
+        letter-spacing: 0.01vw;
+        font-size: 2.5rem;
+        line-height: 6.3vw;
+        margin-top: 3rem;
+        margin-bottom: 7vh;
+    }
+    .s3P {
+        display: none;
+        /* font-size: 3.2vmax;
+        padding: 0 5vw;
+        line-height: 1.3rem; */
+    }
+    .s3Down {
+        display:inline;
+    }
+    .s3DLeft,
+    .s3DRight {
+    width: 100%;
+    }
+    .s3DLeft{
+        margin-top: 5vw;
+    }
+    .s3DRight{
+        margin-top: 5vw;
+    }
+    #page2 h2{
+        font-size: 4vmax;
+        font-family: gilroy;
+        margin-top: 5vmax;
+        margin-bottom: 1.4vmax;
+    }
+    .s3DLeft p {
+        font-size: 3vmax;
+    }
+    .s3DRight{
+        display: none;
+    }
+
+    #page2 #prof {
+        height: 70px;
+        width: 70%;
+        /* background-color: red; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2vmax;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #page2 a img {
+        /* margin-left: -10px; */
+        height: 9.9vmax;
+        /* background-color: blue; */
+    }
+
+}
+
+
+
+
+/* -----Page3 code------ */
+
+
+
+#page3 {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #222;
+    padding: 7vh 5.1vw;
+    position: relative;
+    color: white;
+}
+
+#page3>h3 {
+    font-size: 4.8vmax;
+    font-family: gilroy;
+    margin-bottom: 0vmax;
+}
+
+#page3>h3 span {
+    font-size: 4.8vmax;
+    font-family: gilroy;
+    color: #38cdfa;
+}
+
+#page3>h5 {
+    font-size: 2.2vmax;
+    font-family: gilroy;
+    margin-bottom: 1.4vmax;
+
+}
+
+.box h4 {
+    font-size: 2vmax;
+    border: 2px solid white;
+    display: inline-block;
+    font-family: gilroy;
+    color: #fff;
+    font-weight: 500;
+    padding: 6px 14px;
+    border-radius: 7px;
+    margin-top: 4vmax;
+    margin-bottom: 1.6vmax;
+}
+
+
+.box img {
+    height: 5vmax;
+    margin-right: 12px;
+    background-color: #fff;
+    padding: 5px;
+    position: relative;
+    border-radius: 8px;
+}
+
+.des-box img {
+    height: 6vmax;
+    margin-right: 1.4vmax;
+}
+
+
+
+/* ----Page3 responsive---- */
+
+
+
+@media (max-width:600px) {
+
+
+    #page3 {
+        min-height: 67vh;
+        width: 100%;
+        background-color: #222;
+        padding: 5vh 5.1vw;
+        position: relative;
+    }
+
+    #page3>h3 {
+        font-size: 4.4vmax;
+        font-family: gilroy;
+        margin-bottom: 0vmax;
+    }
+
+    #page3>h3 span {
+        font-size: 4.4vmax;
+        font-family: gilroy;
+        color: #38cdfa;
+    }
+
+    #page3>h5 {
+        font-size: 2.2vmax;
+        font-family: gilroy;
+        font-weight: 500;
+        margin-bottom: 1.4vmax;
+
+    }
+
+    .box h4 {
+        font-size: 2.1vmax;
+        border: 2px solid white;
+        display: inline-block;
+        font-family: gilroy;
+        color: #fff;
+        font-weight: 500;
+        padding: 5px 9px;
+        border-radius: 7px;
+        margin-top: 4vmax;
+        margin-bottom: 2vmax;
+    }
+
+
+    .box img {
+        height: 5.8vmax;
+        margin-right: 5px;
+        background-color: #fff;
+        padding: 4px;
+        position: relative;
+        border-radius: 5px;
+    }
+
+    .des-box img {
+        height: 6.7vmax;
+        margin-right: 5px;
+    }
+
+
+}
+
+
+
+/* ----Page4 code----- */
+
+
+
+#page4 {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #333;
+    position: relative;
+    padding: 5vh 4vw;
+    color: white;
+}
+
+#page4>h2 {
+    font-size: 3.7vmax;
+    font-weight: 600;
+    font-family: gilroy;
+}
+
+#page4>h2 span {
+    font-size: 3.7vmax;
+    font-weight: 600;
+    font-family: gilroy;
+    color: #FC626A;
+}
+
+#page4>h4 {
+    font-size: 1.85vmax;
+    font-weight: 500;
+    margin-bottom: 3vmax;
+    font-family: gilroy;
+}
+
+#work-sample {
+    background-color: #fff;
+    /* border: 3px solid #fff; */
+    height: 76vh;
+    margin-bottom: 4vmax;
+    display: flex;
+    border-radius: 10px;
+    padding: 2vh;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#work-sample img {
+    height: 13vmax;
+    box-shadow: 1px 7px 20px rgba(0, 0, 0, 0.4);
+}
+
+#page4>a {
+    display: block;
+    text-align: right;
+    /* background-color: red; */
+    margin-bottom: 3vmax;
+    padding: 0 1vw;
+}
+
+#page4>a img {
+    height: 4.2vmax;
+}
+
+
+
+/* ----page4 responsive---- */
+
+
+
+@media (max-width:600px) {
+
+    #page4 {
+        min-height: 100vh;
+        width: 100%;
+        background-color: #333;
+        position: relative;
+        padding: 4vh 4.9vw;
+    }
+
+    #page4>h2 {
+        font-size: 4.4vmax;
+        font-weight: 600;
+        font-family: gilroy;
+        /* background-color: red; */
+    }
+
+    #page4>h2 span {
+        font-size: 4.4vmax;
+        font-weight: 600;
+        font-family: gilroy;
+        color: #FC626A;
+    }
+
+    #page4>h4 {
+        font-size: 2.1vmax;
+        font-weight: 500;
+        margin-bottom: 3vmax;
+        font-family: gilroy;
+    }
+
+    #work-sample {
+        background-color: #fff;
+        /* border: 3px solid #fff; */
+        height: 69vh;
+        margin-bottom: 4.8vmax;
+        display: flex;
+        border-radius: 10px;
+        padding: 2vh 1.5vh;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    #work-sample img {
+        height: 23vw;
+        margin: 0 2px;
+        box-shadow: 1px 7px 15px rgba(0, 0, 0, 0.25);
+    }
+
+    #page4>a {
+        display: block;
+        text-align: right;
+        /* background-color: red; */
+        margin-bottom: 1vmax;
+        padding: 0 1vw;
+    }
+
+    #page4>a img {
+        height: 6vmax;
+    }
+
+
+}
+
+
+
+/* ----page6 code---- */
+
+
+
+
+#page6 {
+    background-color: #222;
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    padding: 4.5vh 4.2vw;
+    color: white;
+}
+
+#page6 h1 {
+    /* text-align: center; */
+    font-size: 4.6vmax;
+    font-family: gilroy;
+    margin-top: 1vmax;
+    margin-bottom: 3.5vmax;
+}
+
+#page6 h1 span {
+    color: #F6BA53;
+    font-family: gilroy;
+}
+
+#artworks a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    height: 72px;
+    border-top: 2px solid #fff;
+    padding: 0 3px;
+}
+
+#artworks a:nth-last-child(1) {
+    border-bottom: 2px solid #fff;
+    margin-bottom: 5vmax;
+}
+
+#artworks a h4 {
+    font-size: 1.7vmax;
+    position: relative;
+    z-index: 99;
+    transition: color ease-in 0.4s;
+    width: 12%;
+}
+
+#artworks a h5 {
+    font-size: 1.8vmax;
+    font-weight: 600;
+    font-family: gilroy;
+    width: 30%;
+    position: relative;
+    transition: color ease-in 0.4s;
+    z-index: 99;
+}
+
+#artworks a h6 {
+    font-size: 1.6vmax;
+    width: 30%;
+    text-align: right;
+    position: relative;
+    z-index: 99;
+    transition: color ease-in 0.4s;
+}
+
+#sliding-div {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    z-index: 9;
+    width: 0%;
+    transition: width cubic-bezier(0.19, 1, 0.22, 1) 1.3s;
+    background-color: #fff;
+}
+
+
+#artworks a:hover #sliding-div {
+    width: 100%;
+}
+
+#artworks a:hover h4 {
+    color: #222;
+}
+
+#artworks a:hover h5 {
+    color: #222;
+}
+
+#artworks a:hover h6 {
+    color: #222;
+}
+
+
+
+
+/* ----page6 responsive---- */
+
+
+
+@media (max-width:600px) {
+    #page6 {
+        background-color: #222;
+        min-height: 100vh;
+        width: 100%;
+        position: relative;
+        padding: 4.5vh 4.7vw;
+    }
+
+    #page6 h1 {
+        /* text-align: center; */
+        font-size: 4vmax;
+        font-family: gilroy;
+        margin-top: 0vmax;
+        margin-bottom: 5vmax;
+    }
+
+    #page6 h1 span {
+        color: #F6BA53;
+        font-family: gilroy;
+    }
+
+    #artworks a {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        position: relative;
+        height: 70px;
+        border-top: 2px solid #fff;
+        padding: 0 2px;
+    }
+
+    #artworks a:nth-last-child(1) {
+        border-bottom: 2px solid #fff;
+        margin-bottom: 5vmax;
+    }
+
+    #artworks a h4 {
+        font-size: 2.3vmax;
+        position: relative;
+        z-index: 99;
+        transition: color ease-in 0.4s;
+        width: 18%;
+        /* background-color: red; */
+    }
+
+    #artworks a h5 {
+        font-size: 2vmax;
+        font-weight: 600;
+        font-family: gilroy;
+        width: 33%;
+        /* background-color: red; */
+        position: relative;
+        transition: color ease-in 0.4s;
+        z-index: 99;
+    }
+
+    #artworks a h6 {
+        font-size: 1.9vmax;
+        width: 29%;
+        text-align: right;
+        /* background-color: red; */
+        position: relative;
+        z-index: 99;
+        font-family: gilroy;
+        transition: color ease-in 0.4s;
+    }
+
+    #sliding-div {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        z-index: 9;
+        width: 0%;
+        transition: width cubic-bezier(0.19, 1, 0.22, 1) 1.3s;
+        background-color: #fff;
+    }
+
+
+    #artworks a:hover #sliding-div {
+        width: 100%;
+    }
+
+    #artworks a:hover h4 {
+        color: #222;
+    }
+
+    #artworks a:hover h5 {
+        color: #222;
+    }
+
+    #artworks a:hover h6 {
+        color: #222;
+    }
+
+}
+
+
+
+/* -------page5--------------- */
+
+.page5 {
+    width: 100%;
+    height: 100vh;
+    padding: 0 2vmax;
+    margin-top: 0vh;
+    background-color: #393939;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.page5>h1 {
+    font: 700 9vmax "Gilroy";
+    font-weight: 900;
+}
+
+.mail {
+    color: #FC626A;
+}
+
+.mail a {
+    font-family: gilroy;
+}
+
+.whatsapp a {
+    font-family: gilroy;
+}
+
+.linkedin a {
+    font-family: gilroy;
+}
+
+.whatsapp {
+    color: #F6BA53;
+}
+
+.linkedin {
+    color: #51CDE7;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2vmax 0;
+    font-family: gilroy;
+    font-weight: 600;
+    font-size: 1.5vmax;
+    /* font: normal 1.2vmax "Mont"; */
+}
+
+footer span {
+    font-family: gilroy;
+}
+
+.author {
+    /* font-size: 4vmax; */
+    font-family: monument;
+}
+
+.author a {
+    /* font-size: 4vmax; */
+    color: #FC626A;
+}
+
+footer>img {
+    width: 1.8vmax;
+    margin: 0 .5vmax;
+}
+
+/* ----------------- for all----------------- */
+a {
+    color: inherit !important;
+    text-decoration: none;
+    transition: .5s all;
+}
+
+.page5 a:hover {
+    text-decoration: line-through;
+}
+
+@media (max-width:600px) {
+    .page5>h1 {
+        font-size: 8.4vmax;
+    }
+
+    footer {
+        font-size: 2vmax;
+        margin-top: 10vmax;
+    }
+
+    .author {
+        font-size: 5vmax;
+    }
+
+    footer>img {
+        width: 3vmax;
+    }
+}
